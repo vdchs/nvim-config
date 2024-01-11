@@ -15,4 +15,4 @@ If you don't want to use a plugin, just delete the respective file.
 `lua/plugins/vscode.lua` defines keybinds for specific VSCode commands and is only loaded when Nvim is used inside VSCode.
 
 ## Pairs well with...
-[Vimium!](https://chromewebstore.google.com/detail/dbepggeogbaibhgnhhndojpepiihcmeb) (or similar Extensions for other browsers)
+[Vimium!](https://chromewebstore.google.com/detail/dbepggeogbaibhgnhhndojpepiihcmeb) (or similar extensions for other browsers)
