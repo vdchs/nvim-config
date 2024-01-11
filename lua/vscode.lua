@@ -13,6 +13,9 @@ vim.keymap.set('n', '<Leader>zz',
 vim.keymap.set('n', 'gr',
     function() require('vscode-neovim').call('editor.action.goToReferences') end,
     { desc = 'Go to references' })
+vim.keymap.set('n', 'gg',
+    function() require('vscode-neovim').call('workbench.view.scm') end,
+    { desc = 'Go to Git' })
 vim.keymap.set('n', 'gt',
     function() require('vscode-neovim').call('workbench.action.quickOpenTerm') end,
     { desc = 'Go to terminal' })

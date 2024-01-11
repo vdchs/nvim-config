@@ -37,5 +37,5 @@ vim.o.smartcase = true
 -- SET UP KEYBINDS
 -- VSCode functions
 if vim.g.vscode then
-  require 'plugins/vscode'
+  require 'vscode'
 end
