@@ -22,9 +22,11 @@ vim.keymap.set('n', 'gr',
 vim.keymap.set('n', 'gG',
     function() vscode.call('workbench.view.scm') end,
     { desc = 'Go to Git' })
-vim.keymap.set('n', 'gt',
-    function() vscode.call('workbench.action.quickOpenTerm') end,
+vim.keymap.set('n', 'gt', function() vscode.call('workbench.action.terminal.toggleTerminal') end,
     { desc = 'Go to terminal' })
+vim.keymap.set('n', 'gT',
+    function() vscode.call('workbench.action.quickOpenTerm') end,
+    { desc = 'Go to terminal selector' })
 vim.keymap.set('n', 'gs',
     function() vscode.call('workbench.view.search') end,
     { desc = 'Go to search and replace' })
