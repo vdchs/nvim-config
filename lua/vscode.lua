@@ -11,7 +11,7 @@ vim.keymap.set('n', '<Leader>zz',
     function() vscode.call('workbench.action.toggleZenMode') end,
     { desc = 'Zen mode' })
 -- goto different windows
-vim.keymap.set('n', 'gg', function()
+vim.keymap.set('n', 'gzz', function()
     vscode.action('workbench.action.closeSidebar')
     vscode.action('workbench.action.closeAuxiliaryBar')
     vscode.action('workbench.action.closePanel')
