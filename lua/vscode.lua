@@ -30,9 +30,6 @@ vim.keymap.set('n', 'gT',
 vim.keymap.set('n', 'gs',
     function() vscode.call('workbench.view.search') end,
     { desc = 'Go to search and replace' })
-vim.keymap.set('n', '<Leader>p',
-    function() vscode.call('workbench.action.quickOpen') end,
-    { desc = 'Quick open file explorer' })
 vim.keymap.set('n', 'gfe',
     function()
         vscode.call('workbench.files.action.focusFilesExplorer')

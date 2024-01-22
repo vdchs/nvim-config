@@ -21,9 +21,9 @@ return {
                 incremental_selection = {
                     enable = true,
                     keymaps = {
-                        init_selection = '<Leader>ti',
-                        node_incremental = '<Leader>ti',
-                        node_decremental = '<Leader>tI'
+                        init_selection = '<Leader><Space>',
+                        node_incremental = '<Leader><Space>',
+                        node_decremental = '<Leader><BS>'
                     }
                 },
                 textobjects = {
@@ -31,13 +31,13 @@ return {
                         enable = true,
                         set_jumps = true, -- set jumps in the jumplist
                         goto_next_start = {
-                            [']m'] = '@function.outer',
+                            [']m'] = '@function.inner',
                         },
                         goto_next_end = {
                             [']M'] = '@function.outer',
                         },
                         goto_previous_start = {
-                            ['[m'] = '@function.outer',
+                            ['[m'] = '@function.inner',
                         },
                         goto_previous_end = {
                             ['[M'] = '@function.outer',
@@ -46,10 +46,10 @@ return {
                     swap = {
                         enable = true,
                         swap_next = {
-                            ['<Leader>tsa'] = '@parameter.inner',
+                            ['<Leader>csa'] = '@parameter.inner',
                         },
                         swap_previous = {
-                            ['<Leader>tsA'] = '@parameter.inner'
+                            ['<Leader>csA'] = '@parameter.inner'
                         }
                     }
                 }
