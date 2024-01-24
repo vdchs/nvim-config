@@ -4,8 +4,10 @@ vim.keymap.set('n', '<Leader>i', 'gi', { remap = true, desc = 'Go to last insert
 -- When the LSP crashes...
 vim.keymap.set('n', '<Leader>vsr', function() vscode.action('workbench.action.reloadWindow') end,
     { desc = '(VS Code) Reload window' })
--- Easier entry point for window management
+-- Window Management
 vim.keymap.set('n', '<Leader>w', '<C-w>', { remap = true, desc = 'Window management...' })
+vim.keymap.set('n', '<Leader>wo', function() vscode.action('workbench.action.closeOtherEditors') end,
+    { desc = 'Close other editors' })
 -- go into zen mode
 vim.keymap.set('n', '<Leader>zz',
     function() vscode.call('workbench.action.toggleZenMode') end,
