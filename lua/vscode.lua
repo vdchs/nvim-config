@@ -47,6 +47,7 @@ vim.keymap.set('n', 'so',
     function() vscode.call('workbench.action.gotoSymbol') end,
     { desc = 'Search in outline' })
 -- code actions
+vim.keymap.set('n', '<Leader>cq', function() vscode.call('editor.action.quickFix') end, { desc = 'Quick fix' })
 vim.keymap.set('n', '<Leader>cf',
     function() vscode.call('editor.action.formatDocument') end,
     { desc = 'Format code' })
@@ -58,10 +59,10 @@ vim.keymap.set('n', '[d',
     { desc = 'Previous diagnostic message' })
 vim.keymap.set('n', '<Leader>ca',
     function() vscode.call('editor.action.refactor') end,
-    { desc = 'Refactor...' })
+    { desc = 'Refactor' })
 vim.keymap.set('n', '<Leader>csa',
     function() vscode.call('editor.action.sourceAction') end,
-    { desc = 'Source action...' })
+    { desc = 'Source action' })
 vim.keymap.set('n', '<Leader>cr',
     function() vscode.call('editor.action.rename') end,
     { desc = 'Rename symbol' })
