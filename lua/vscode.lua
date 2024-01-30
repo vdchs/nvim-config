@@ -62,7 +62,7 @@ vim.keymap.set('n', '[d',
 vim.keymap.set('n', '<Leader>ca',
     function() vscode.call('editor.action.refactor') end,
     { desc = 'Refactor' })
-vim.keymap.set('n', '<Leader>csa',
+vim.keymap.set('n', '<Leader>cA',
     function() vscode.call('editor.action.sourceAction') end,
     { desc = 'Source action' })
 vim.keymap.set('n', '<Leader>cr',
