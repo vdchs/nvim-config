@@ -8,6 +8,8 @@ vim.keymap.set('n', '<Leader>vsr', function() vscode.action('workbench.action.re
 vim.keymap.set('n', '<Leader>w', '<C-w>', { remap = true, desc = 'Window management...' })
 vim.keymap.set('n', '<Leader>wo', function() vscode.action('workbench.action.closeOtherEditors') end,
     { desc = 'Close other editors' })
+vim.keymap.set('n', '<Leader>wa', function() vscode.action('workbench.action.closeAllEditors') end, 
+    {desc = 'Close all editors' })
 -- go into zen mode
 vim.keymap.set('n', '<Leader>zz',
     function() vscode.call('workbench.action.toggleZenMode') end,
