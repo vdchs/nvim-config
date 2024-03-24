@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+
 vim.g.maplocalleader = " "
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -38,11 +39,7 @@ vim.o.relativenumber = true
 if vim.g.vscode then
 	require("vscode")
 else
-	-- diagnostic messages
-	vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous dagnostic message" })
-	vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic message" })
-	vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic error messages" })
-
+	vim.keymap.set('n', '<Leader>w', '<C-w>', {desc = 'windows...'})
 	require("lazy").setup({
 		{ import = "plugins" },
 	})
