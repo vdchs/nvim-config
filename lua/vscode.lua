@@ -1,3 +1,11 @@
+-- configure plugins running in vscode
+require("lazy").setup({
+    { import = 'plugins.leap' },
+    { import = 'plugins.surround' },
+    { import = 'plugins.treesitter' }
+})
+
+
 local vscode = require('vscode-neovim')
 vim.keymap.set('n', '<Leader>i', 'gi', { remap = true, desc = 'Go to last insertion point and insert' })
 

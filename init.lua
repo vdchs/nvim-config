@@ -14,10 +14,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-  { import = 'plugins' }
-})
-
 -- Enable highlighting on yank
 -- see https://github.com/vscode-neovim/vscode-neovim/issues/856
 vim.cmd [[
@@ -41,4 +37,8 @@ vim.o.relativenumber = true
 -- VSCode functions
 if vim.g.vscode then
   require 'vscode'
+else
+  require("lazy").setup({
+    { import = 'plugins' }
+  })
 end
