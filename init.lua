@@ -33,6 +33,9 @@ vim.o.clipboard = 'unnamedplus'
 --easier seaching
 vim.o.ignorecase = true
 vim.o.smartcase = true
+-- line numbers
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- SET UP KEYBINDS
 -- VSCode functions

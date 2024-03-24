@@ -22,7 +22,7 @@ vim.keymap.set('n', 'gr',
     function() vscode.call('editor.action.goToReferences') end,
     { desc = 'Go to references' })
 vim.keymap.set('n', 'gG',
-    function() vscode.call('workbench.view.scm') end,
+    function() vscode.call('lazygit.openLazygit') end,
     { desc = 'Go to Git' })
 vim.keymap.set('n', 'gt', function() vscode.call('workbench.action.terminal.toggleTerminal') end,
     { desc = 'Go to terminal' })
@@ -59,7 +59,7 @@ vim.keymap.set('n', ']d',
 vim.keymap.set('n', '[d',
     function() vscode.call('editor.action.marker.prev') end,
     { desc = 'Previous diagnostic message' })
-vim.keymap.set('n', '<Leader>ca',
+vim.keymap.set({'n', 'v'}, '<Leader>ca',
     function() vscode.call('editor.action.refactor') end,
     { desc = 'Refactor' })
 vim.keymap.set('n', '<Leader>cA',
