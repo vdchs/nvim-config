@@ -37,7 +37,7 @@ vim.o.relativenumber = true
 -- SET UP KEYBINDS
 -- VSCode functions
 if vim.g.vscode then
-	require("vscode")
+	require("vsc")
 else
 	vim.keymap.set('n', '<Leader>w', '<C-w>', {desc = 'windows...'})
 	require("lazy").setup({
