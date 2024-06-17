@@ -22,6 +22,10 @@ vim.keymap.set('n', '<Leader>wa', function() vscode.action('workbench.action.clo
 vim.keymap.set('n', '<Leader>zz',
     function() vscode.call('workbench.action.toggleZenMode') end,
     { desc = 'Zen mode' })
+-- change workspaces
+vim.keymap.set('n', '<Leader>pr',
+    function() vscode.call('workbench.action.openRecent') end,
+    {desc = 'Open recent...'})
 -- goto different windows
 vim.keymap.set('n', 'gzz', function()
     vscode.action('workbench.action.closeSidebar')
