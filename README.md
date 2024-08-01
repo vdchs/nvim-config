@@ -13,17 +13,6 @@ If you don't want to use a plugin, just delete the respective file.
 
 ## VSCode commands
 `lua/plugins/vsc.lua` defines keybinds for specific VSCode commands and is only loaded when Nvim is used inside VSCode.
-### Composite Escape / better-escape
-Composite Esc needs to be set in VSCode keymaps. Add this to your `keybindings.json` to make `jj` your Composite Escape key:
-```
-{
-		"key": "j",
-		"args": "j",
-		"command": "vscode-neovim.compositeEscape1",
-		"when": "neovim.mode == insert && editorTextFocus"
-}
-```
-
 
 ## 🍷 Pairs well with...
 🧀 [Vimium!](https://chromewebstore.google.com/detail/dbepggeogbaibhgnhhndojpepiihcmeb) (or similar extensions for other browsers)
