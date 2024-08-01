@@ -14,6 +14,8 @@ vim.keymap.set('n', '<Leader>vsr', function() vscode.action('workbench.action.re
     { desc = '(VS Code) Reload window' })
 -- Window Management
 vim.keymap.set('n', '<Leader>w', '<C-w>', { remap = true, desc = 'Window management...' })
+vim.keymap.set('n', '<Leader>ww', function() vscode.action('workbench.action.closeActiveEditor') end, 
+    {desc = 'Close active editor' })
 vim.keymap.set('n', '<Leader>wo', function() vscode.action('workbench.action.closeOtherEditors') end,
     { desc = 'Close other editors' })
 vim.keymap.set('n', '<Leader>wa', function() vscode.action('workbench.action.closeAllEditors') end, 
