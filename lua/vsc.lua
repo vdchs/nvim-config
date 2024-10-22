@@ -75,6 +75,12 @@ vim.keymap.set('n', ']d',
 vim.keymap.set('n', '[d',
     function() vscode.call('editor.action.marker.prev') end,
     { desc = 'Previous diagnostic message' })
+vim.keymap.set('n', ']c',
+    function() vscode.call('workbench.action.editor.nextChange') end,
+    { desc = 'Next change' })
+vim.keymap.set('n', '[c',
+    function() vscode.call('workbench.action.editor.previousChange') end,
+    { desc = 'Previous change' })
 vim.keymap.set({'n', 'v'}, '<Leader>ca',
     function() vscode.call('editor.action.refactor') end,
     { desc = 'Refactor' })
