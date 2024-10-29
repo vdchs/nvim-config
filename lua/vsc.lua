@@ -1,6 +1,6 @@
 -- configure plugins running in vscode
 require("lazy").setup({
-    { import = 'plugins.leap' },
+    { import = 'plugins.flash' },
     { import = 'plugins.surround' },
     { import = 'plugins.treesitter' }
 })
