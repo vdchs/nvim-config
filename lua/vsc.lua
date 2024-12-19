@@ -2,7 +2,7 @@
 require("lazy").setup({
     { import = 'plugins.flash' },
     { import = 'plugins.surround' },
-    { import = 'plugins.treesitter' }
+    { import = 'plugins.treesitter' },
 })
 
 
@@ -22,8 +22,8 @@ vim.keymap.set('n', '<Leader>wa', function() vscode.action('workbench.action.clo
     {desc = 'Close all editors' })
 -- go into zen mode
 vim.keymap.set('n', '<Leader>zz',
-    function() vscode.call('workbench.action.toggleZenMode') end,
-    { desc = 'Zen mode' })
+    function() vscode.call('workbench.action.toggleCenteredLayout') end,
+    { desc = 'Toggle Centered Layout' })
 -- change workspaces
 vim.keymap.set('n', '<Leader>pr',
     function() vscode.call('workbench.action.openRecent') end,
@@ -49,19 +49,10 @@ vim.keymap.set('n', 'gs',
     function() vscode.call('workbench.view.search') end,
     { desc = 'Go to search and replace' })
 vim.keymap.set('n', 'gfe',
-    function()
-        vscode.call('workbench.files.action.focusFilesExplorer')
-        vscode.call('workbench.files.action.showActiveFileInExplorer')
-    end,
+    function() vscode.call('vsnetrw.open') end,
     { desc = 'Reveal active file in explorer' })
-vim.keymap.set('n', 'gfr',
-    function()
-        vscode.call('workbench.files.action.focusFilesExplorer')
-        vscode.call('workbench.files.action.collapseExplorerFolders')
-    end,
-    { desc = 'Open file explorer in root' })
 -- search for things
-vim.keymap.set('n', 'so',
+vim.keymap.set('n', '<leader>so',
     function() vscode.call('workbench.action.gotoSymbol') end,
     { desc = 'Search in outline' })
 -- code actions
