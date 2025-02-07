@@ -4,9 +4,9 @@ return {
     config = function()
         require('mini.surround').setup {
             mappings = {
-                add = '<Leader>sa',
-                delete = '<Leader>sd',
-                replace = '<Leader>sr',
+                add = 'csa',
+                delete = 'ds',
+                replace = 'cr',
                 find = '',
                 find_left = '',
                 highlight = '',
