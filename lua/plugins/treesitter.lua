@@ -21,9 +21,9 @@ return {
                 incremental_selection = {
                     enable = true,
                     keymaps = {
-                        init_selection = '<Leader><Space>',
-                        node_incremental = '<Leader><Space>',
-                        node_decremental = '<Leader><BS>'
+                        init_selection = ']<Space>',
+                        node_incremental = ']<Space>',
+                        node_decremental = '[<Space>'
                     }
                 },
                 textobjects = {

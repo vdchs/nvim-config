@@ -42,6 +42,7 @@ else
 	vim.o.expandtab = true
 	vim.o.tabstop = 2
 	vim.o.shiftwidth = 2
+	vim.keymap.set("n", "<Leader>ww", ":q<CR>", {desc = "Close window"})
 	vim.keymap.set("n", "<Leader>w", "<C-w>", { desc = "windows..." })
 	require("lazy").setup({
 		{ import = "plugins" },
